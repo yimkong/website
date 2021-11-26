@@ -27,8 +27,6 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
-		//TODO
-		$('.message').fadeIn('slow');
 	});
 	$('#play').click(function(){
 		var audio = $('.song')[0];
