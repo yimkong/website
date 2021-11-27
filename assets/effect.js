@@ -27,8 +27,8 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
-		$('.custom_img img').fadeIn('slow').css("display","block");
 		$('#o1').fadeIn('slow');
+		$('.custom_img img').fadeIn('slow').css("display","block");
 	});
 	$('#play').click(function(){
 		var audio = $('.song')[0];
@@ -41,23 +41,23 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$('.custom_img img').fadeOut('slow');
-		$('.custom_img0 img').fadeIn('slow');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 		$('#o1').fadeOut('slow');
-		$('#o2').fadeIn('slow');
+        $('#o2').fadeIn('slow');
+        $('.custom_img img').fadeOut('slow');
+        $('.custom_img0 img').fadeIn('slow');
 	});
 
 	$('#bannar_coming').click(function(){
 	    $('#banner_o').removeClass('block_non');
+	    $('#o2').fadeOut('slow');
 	    $('.custom_img0 img').fadeOut('slow');
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
-		$('#o2').fadeOut('slow');
 	});
 
 	function loopOne() {
