@@ -47,7 +47,7 @@ $('document').ready(function(){
 		$('#o1').fadeOut('slow');
         $('#o2').fadeIn('slow');
         $('.custom_img img').delay(100).fadeOut('slow');
-        $('.custom_img0 img').delay(100).fadeIn('slow');
+        $('.custom_img0 img').delay(100).fadeIn('slow').css("display","block");;
 	});
 
 	$('#bannar_coming').click(function(){
